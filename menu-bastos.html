@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú de Bastos Restaurante en la Guía Gastronómica de Cañas.">
+  <title>Menú | Bastos Restaurante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root{--terracota:#B65339;--terracota-oscuro:#963E2A;--verde:#2E5E3E;--verde-oscuro:#244B32;--crema:#F2E6D6;--blanco:#FAF8F4;--texto:#2B2B2B}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;background:var(--blanco);color:var(--texto);line-height:1.65}
+    header{background:var(--verde);color:white;padding:18px 5%;}
+    .nav{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{font-size:17px;font-weight:700;color:white;text-decoration:none}
+    .back{color:white;text-decoration:none;border:1px solid rgba(255,255,255,.55);padding:9px 15px;border-radius:24px;font-size:13px}
+    .hero{text-align:center;padding:60px 20px;background:linear-gradient(135deg,var(--crema),#fffaf4)}
+    .hero .icon{color:var(--terracota);font-size:35px;margin-bottom:12px}
+    h1{font-size:clamp(28px,5vw,42px);line-height:1.2;color:var(--verde);margin-bottom:14px}
+    .hero p{max-width:780px;margin:auto}
+    main{max-width:1120px;margin:38px auto;padding:0 20px}
+    .note{background:#fff;border-left:5px solid var(--terracota);padding:17px 20px;border-radius:12px;margin-bottom:32px;font-size:14px}
+    .menu-section{margin:35px 0}
+    .menu-section h2{color:var(--verde);font-size:24px;margin-bottom:16px}
+    .dish-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+    .dish{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid #eee5dc;border-radius:16px;padding:19px;box-shadow:0 5px 15px rgba(0,0,0,.04)}
+    .dish-icon{flex:0 0 40px;width:40px;height:40px;border-radius:12px;background:var(--crema);color:var(--terracota);display:grid;place-items:center}
+    .dish h3{font-size:15px;line-height:1.45;color:var(--texto);margin-bottom:7px}
+    .dish p{font-size:14px;font-weight:700;color:var(--terracota-oscuro)}
+    .source{margin-top:40px;padding-top:22px;border-top:1px solid #e4ddd5;font-size:13px}
+    .source a{color:var(--verde);overflow-wrap:anywhere}
+    .actions{text-align:center;margin:35px 0 48px}
+    .button{display:inline-flex;gap:9px;align-items:center;background:var(--terracota);color:white;text-decoration:none;padding:12px 22px;border-radius:30px;font-weight:600;transition:.2s}
+    .button:hover{background:var(--terracota-oscuro);transform:translateY(-2px)}
+    footer{background:var(--verde-oscuro);color:white;text-align:center;padding:24px 15px;font-size:13px}
+    @media(max-width:600px){header{padding:16px 5%}.nav{justify-content:center;text-align:center}.hero{padding:45px 18px}main{margin:28px auto}.dish-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><nav class="nav">
+    <a class="brand" href="index.html"><i class="fa-solid fa-utensils"></i> Guía Gastronómica de Cañas</a>
+    <a class="back" href="menu.html"><i class="fa-solid fa-arrow-left"></i> Todos los restaurantes</a>
+  </nav></header>
+  <section class="hero">
+    <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+    <h1>Bastos Restaurante</h1>
+    <p>Explora una selección de opciones gastronómicas de Cañas, Guanacaste.</p>
+  </section>
+  <main>
+    <div class="note"><strong>Antes de ordenar:</strong> Selección de platillos publicados en el menú en línea de Bastos. Los precios pueden cambiar; verifica el menú oficial antes de visitar.</div>
+    <section class="menu-section"><h2>Entradas</h2><div class="dish-grid"><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Ceviche de pescado pequeño</h3><p>₡4.200</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Ceviche tropical pequeño</h3><p>₡4.700</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Crema de tomate o brócoli</h3><p>₡5.200</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Sopa de tortilla mexicana</h3><p>₡5.700</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Ensalada de la casa con pollo</h3><p>₡5.200</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Ensalada de la casa con camarones</h3><p>₡7.000</p></div>
+            </article></div></section><section class="menu-section"><h2>Arroces</h2><div class="dish-grid"><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Arroz con pollo</h3><p>₡6.000</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Arroz casero</h3><p>₡6.300</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Arroz con camarones</h3><p>₡8.700</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Arroz con mariscos</h3><p>₡8.700</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Arroz chaufa con cerdo, res o camarones</h3><p>₡8.500</p></div>
+            </article></div></section><section class="menu-section"><h2>Pastas</h2><div class="dish-grid"><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Fettuccine con pollo</h3><p>₡7.000</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Fettuccine con bistec</h3><p>₡8.500</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Fettuccine de camarones en salsa Aurora</h3><p>₡9.500</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Espagueti con camarones</h3><p>₡9.000</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Espagueti boloñesa</h3><p>₡6.700</p></div>
+            </article></div></section><section class="menu-section"><h2>Carnes y especiales</h2><div class="dish-grid"><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Lomito Bastos con tocineta y plátano maduro</h3><p>₡11.700</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Lomito con pimienta o chimichurri</h3><p>₡11.200</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Filet mignon con salsa de hongos</h3><p>₡11.500</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Lomito en salsa de uvas con vegetales</h3><p>₡11.000</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Stroganoff de res</h3><p>₡8.700</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Chifrijo Bastos</h3><p>₡5.800</p></div>
+            </article></div></section><section class="menu-section"><h2>Postres</h2><div class="dish-grid"><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Crème brûlée tropical</h3><p>₡3.500</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Flan de coco o caramelo</h3><p>₡3.500</p></div>
+            </article><article class="dish">
+                <div class="dish-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="dish-info"><h3>Brownie con helado</h3><p>₡3.500</p></div>
+            </article></div></section>
+    <div class="source"><strong>Fuente consultada:</strong> <a href="https://bastoscr.com/en/" target="_blank" rel="noopener noreferrer">Menú oficial de Bastos Restaurante</a></div>
+    <div class="actions"><a class="button" href="menu.html"><i class="fa-solid fa-arrow-left"></i> Regresar a los menús</a></div>
+  </main>
+  <footer><p>Guía Gastronómica de Cañas · Cañas, Guanacaste, Costa Rica</p><p>Proyecto educativo informativo. Verifica directamente los precios y la disponibilidad.</p></footer>
+</body>
+</html>

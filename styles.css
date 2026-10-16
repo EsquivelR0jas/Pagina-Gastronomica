@@ -3532,3 +3532,28 @@ a {
     }
 }
 
+/* BOTÓN VER MENÚ */
+
+.btn-ver-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background-color: #B65339;
+    color: #FAF8F4;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-ver-menu:hover {
+    background-color: #963E2A;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(150, 62, 42, 0.2);
+}
+

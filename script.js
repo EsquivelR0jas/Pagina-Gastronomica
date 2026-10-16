@@ -340,8 +340,60 @@ document.addEventListener("DOMContentLoaded", () => {
             formulario.reset();
 
         });
+        
 
     }
 
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Menú de navegación para dispositivos móviles.
+    const botonMenu = document.getElementById("menu-toggle");
+    const navegacion = document.getElementById("nav");
+
+    if (botonMenu && navegacion) {
+        botonMenu.addEventListener("click", () => {
+            const estaAbierto = navegacion.classList.toggle("activo");
+
+            botonMenu.setAttribute(
+                "aria-expanded",
+                String(estaAbierto)
+            );
+
+            botonMenu.setAttribute(
+                "aria-label",
+                estaAbierto
+                    ? "Cerrar menú de navegación"
+                    : "Abrir menú de navegación"
+            );
+
+            const icono = botonMenu.querySelector("i");
+
+            if (icono) {
+                icono.classList.toggle("fa-bars", !estaAbierto);
+                icono.classList.toggle("fa-xmark", estaAbierto);
+            }
+        });
+    }
+
+    // Desplazamiento suave hacia las secciones internas.
+    document.querySelectorAll('a[href^="#"]').forEach((enlace) => {
+        enlace.addEventListener("click", (evento) => {
+            const destino = document.querySelector(
+                enlace.getAttribute("href")
+            );
+
+            if (destino) {
+                evento.preventDefault();
+
+                destino.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        });
+    });
+});
+
 

@@ -3326,3 +3326,209 @@ a {
     text-decoration: none;
     border-radius: 8px;
 }
+
+/* ==========================================
+   FICHA INFORMATIVA: BASTOS CAÑAS
+   ========================================== */
+
+.bastos-hero {
+    padding: 85px 0;
+    background: linear-gradient(
+        135deg,
+        #F2E6D6 0%,
+        #FAF8F4 100%
+    );
+    text-align: center;
+}
+
+.bastos-hero .etiqueta {
+    color: #963E2A;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.bastos-hero h1 {
+    color: #2E5E3E;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.bastos-hero p:not(.etiqueta) {
+    max-width: 650px;
+    margin: 0 auto 26px;
+    line-height: 1.8;
+    color: #2B2B2B;
+}
+
+.btn-bastos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 22px;
+    background: #B65339;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background 0.25s, transform 0.25s;
+}
+
+.btn-bastos:hover {
+    background: #963E2A;
+    transform: translateY(-2px);
+}
+
+.bastos-seccion {
+    padding: 75px 0;
+}
+
+.bastos-contenido {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 55px;
+}
+
+.bastos-fotografia img {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    max-height: 440px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(43, 43, 43, 0.12);
+}
+
+.bastos-categoria {
+    display: inline-block;
+    padding: 7px 13px;
+    background: #E7EFDF;
+    color: #2E5E3E;
+    border-radius: 30px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.bastos-detalles h2 {
+    color: #2E5E3E;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.bastos-detalles > p {
+    color: #2B2B2B;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.bastos-dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid #E8E1D8;
+}
+
+.bastos-dato > i {
+    color: #B65339;
+    font-size: 1.2rem;
+    width: 22px;
+    padding-top: 3px;
+}
+
+.bastos-dato strong {
+    color: #2E5E3E;
+}
+
+.bastos-dato p {
+    color: #555555;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+.bastos-detalles > .btn-bastos {
+    margin-top: 25px;
+}
+
+.bastos-nota {
+    padding: 24px 0;
+    background: #F2E6D6;
+}
+
+.bastos-nota .contenedor {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.bastos-nota i {
+    color: #963E2A;
+    font-size: 1.3rem;
+    margin-top: 4px;
+}
+
+.bastos-nota p {
+    color: #2B2B2B;
+    line-height: 1.7;
+}
+
+.bastos-regreso {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.bastos-regreso a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #2E5E3E;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bastos-regreso a:hover {
+    color: #B65339;
+}
+
+/* Adaptación a dispositivos móviles */
+
+@media (max-width: 768px) {
+    .bastos-hero {
+        padding: 60px 0;
+    }
+
+    .bastos-seccion {
+        padding: 45px 0;
+    }
+
+    .bastos-contenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bastos-fotografia img {
+        min-height: 220px;
+        max-height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bastos-hero {
+        padding: 45px 0;
+    }
+
+    .btn-bastos {
+        width: 100%;
+    }
+
+    .bastos-nota .contenedor {
+        gap: 10px;
+    }
+}
+
